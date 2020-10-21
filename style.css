@@ -3,7 +3,10 @@
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    background-color: gray;
+    /* background-color: gray; */
+}
+.bg-light{
+  background-color: transparent;
 }
 
 .head{
@@ -12,8 +15,8 @@
     display: flex;
 }
 .nav-links :hover{
-  background-color: thistle;
-}
+  background-color: orange;
+} 
 .btn{
   color: orange;
   background-color: white;
@@ -62,6 +65,10 @@ h3 {
 .container {
   margin-top: 2rem;
   text-align: center;
+}
+.iconify{
+  background-attachment: orange;
+
 }
 
 
