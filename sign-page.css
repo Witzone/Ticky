@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbd5d0;
+  background-image: url(./Images/Landing\ Page.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 88% 100%;
+  background-position-x: center;
+}
+
+.logo {
+  padding-left: 140px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.info {
+  padding-left: 140px;
+  margin-top: 200px;
+  color: white;
+  font-size: 20px;
+}
+
+.buttons {
+  padding-left: 70%;
+  margin-top: 80px;
+  font-family: Montserrat;
+  /* display: block; */
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  width: 140px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* .btn:hover {
+  background-color: #ffffff;
+} */
+
+.sign-btn {
+  background-color: #dbd5d0;
+  margin-bottom: 50px;
+  color: #914604;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.sign-btn a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #914604;
+  font-weight: 700;
+}
+
+.signup-btn a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #dbd5d0;
+  font-weight: 700;
+}
+
+.signup-btn {
+  background-color: #914604;
+  color: #dbd5d0;
+  text-decoration: none;
+}
+
+.social {
+  float: right;
+  font-size: 30px;
+  color: #914604;
+  
+}
+
+.social p {
+  font-size: 20px;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+/* .fab {
+  margin-top: 0%;
+  align-items: center;
+  display: flex;
+  flex-direction: ;
+} */
