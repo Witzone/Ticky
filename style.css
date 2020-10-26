@@ -59,3 +59,95 @@ a {
   width: 20rem;
   margin-left: 7rem;
 }
+
+.dropbtn {
+  background-color: rgb(134, 65, 7);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 14rem;
+  height: 4rem;
+  margin-left: 60rem;
+  box-sizing: none;
+  outline: none;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: White;
+  color: black;
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: ease-out;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  overflow: auto;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+  margin-left: 60rem;
+  transition: ease-in-out;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown a:hover {
+  background-color: #ddd;
+} */
+
+.show {
+  display: block;
+}
+.but1 {
+  border-radius: 10px;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background-color: rgb(134, 65, 7);
+  border: none;
+  color: white;
+  outline: none;
+  margin-left: 2rem;
+}
+.but2 {
+  border-radius: 10px;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background-color: rgb(134, 65, 7);
+  border: none;
+  color: white;
+  outline: none;
+  margin-left: 2rem;
+}
+.but1:hover {
+  background-color: rgb(104, 81, 37);
+  opacity: 50%;
+  cursor: pointer;
+}
+.but2:hover {
+  background-color: rgb(104, 81, 37);
+  opacity: 50%;
+  cursor: pointer;
+}

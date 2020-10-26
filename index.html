@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticky</title>
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-    
+    <style>
+      
+    </style>
+   
   </head>
   <body>
 <div class="nav-bar">
       <img src="/Images/ticky2-Recovered.png" class="nav-head" />
       <div class="nav-links">
         <ul id="links">
-          <li><a href="#">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Account</a></li>
         </ul>
@@ -33,18 +30,37 @@
           accusantium tempore hic asperiores veritatis.
         </p>
       </div>
-<section>
-  <div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Book Trip
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <button><a class="dropdown-item" href="#">Book For Self</a></button>
-    <button><a class="dropdown-item" href="#">Book For Others</a></button>
-  
+    <section>
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Book Trip</button>
+      <div id="myDropdown" class="dropdown-content">
+         <button class="but1"><a href="/bookforself.html">Book For Self</a></button>
+         <button class="but2"><a href="/bookforothers.html">Book For Others</a></button>
+        
+      </div>
+    </div>
+      </section>
   </div>
-</div>
+ <script>
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
 </body>
 </html>
