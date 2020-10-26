@@ -1,3 +1,50 @@
+/* for the background */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbd5d0;
+  background-image: url(./Images/Landing\ Page.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 88% 100%;
+  background-position-x: center;
+  overflow: hidden;
+}
+
+.logo {
+  padding-left: 140px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.info {
+  padding-left: 140px;
+  margin-top: 200px;
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  position: absolute;
+}
+
+.social {
+  position: absolute;
+  display: inline-block;
+  margin-left: 92%;
+  padding: 50px;
+  font-size: 30px;
+  color: #914604;
+}
+
+.social > i {
+  margin: 20%;
+}
+
+/* for the sign in page */
 .container {
   position: relative;
   margin-left: 55%;
@@ -45,4 +92,80 @@ input[type="submit"] {
   text-decoration: none;
   color: aliceblue;
   margin-bottom: 20px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 780px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+
+  body {
+    background-size: 100% 100%;
+    background-size: cover;
+  }
+
+  .logo {
+    margin: 10px;
+    padding: 0;
+    margin-right: 20%;
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+
+  .info {
+    /* position: relative;
+    padding: 0px;
+    margin: 3%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px; */
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding-bottom: 100px;
+  }
+
+  .form-group {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .submit {
+    margin-left: 100px;
+  }
+
+  .create-account a {
+    /* text-decoration: none;
+    color: aliceblue;
+    margin-bottom: 20px; */
+    margin-left: 14px;
+  }
+
+  .signup-btn {
+    margin-top: 40px;
+  }
+  .social {
+    position: fixed;
+    margin-left: 1%;
+    margin-right: 6%;
+    display: inline;
+    top: 10px;
+    height: 2px;
+    margin-top: 850px;
+    color: #dbd5d0;
+
+    justify-content: space-between;
+  }
+
+  .fab {
+    margin: 0px 0px 0px 25px;
+  }
 }
