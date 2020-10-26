@@ -6,13 +6,6 @@ body {
   background-position-x: center;
 }
 
-.nav-head {
-  width: 8rem;
-  height: 3rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
 .nav-bar {
   display: flex;
   margin-left: 6rem;
@@ -21,6 +14,12 @@ body {
   font-size: 2rem;
 }
 
+.nav-head {
+  width: 8rem;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
 .nav-links {
   margin-left: 50rem;
   font-size: 1.5rem;
@@ -39,7 +38,7 @@ li:hover {
 
   /* right: 0%; */
   text-decoration: none;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   color: white;
 }
 
@@ -52,10 +51,4 @@ a {
   text-decoration: none;
   padding-left: 2rem;
   color: white;
-}
-
-.paragraph {
-  color: white;
-  width: 20rem;
-  margin-left: 7rem;
 }
