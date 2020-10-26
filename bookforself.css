@@ -4,6 +4,7 @@ body {
   background-attachment: fixed;
   background-size: 88% 100%;
   background-position-x: center;
+  overflow: hidden;
 }
 .nav-head {
   width: 8rem;
@@ -35,7 +36,7 @@ li:hover {
 #links {
   list-style-type: none;
   display: flex;
- 
+
   /* right: 0%; */
   text-decoration: none;
   padding-right: 2rem;
@@ -126,4 +127,19 @@ a {
 .pbtn:hover {
   background-color: rgb(6, 134, 1);
   cursor: pointer;
+}
+.social {
+  position: relative;
+  display: inline-block;
+  margin-left: 15%;
+  padding: 10px;
+  font-size: 30px;
+  color: #914604;
+  width: 1px;
+}
+
+.social > i {
+  margin: 5%;
+}
+.anc {
 }
