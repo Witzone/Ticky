@@ -1,9 +1,11 @@
 body {
-  background-image: url(/Images/Landing\ Page.png);
+  background-image: url(/Images/pay.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 88% 100%;
   background-position-x: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
 }
 
 .nav-bar {
