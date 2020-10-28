@@ -141,5 +141,7 @@ a {
 .social > i {
   margin: 5%;
 }
-.anc {
+
+.labelShowPrice{
+  border-style: solid;
 }
