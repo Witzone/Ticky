@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticky</title>
     <link rel="stylesheet" href="/bookforself.css" />
-    <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    
   </head>
   <body>
     <div class="nav-bar">
       <img src="/Images/ticky2-Recovered.png" class="nav-head" />
       <div class="nav-links">
         <ul id="links">
-          <li><a href="#">Home</a></li>
+          <li><a href="/home.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Account</a></li>
         </ul>
@@ -34,37 +36,66 @@
         <hr />
         <br />
 
-        <div class="div-paragraph">
-          <label for="destination">Search Destination:</label>
-          <select name="destination" id="destination">
-            <option value=""></option>
-            <option value="">Accra</option>
-            <option value="">Kumasi</option>
-            <option value="">Ho</option></select
-          ><br />
-          <br />
+        <p>by seth</p>
+    <form class="form" action="./payment.html" method="GET">
 
-          <label for="location">Your Location:</label>
-          <select name="location" id="location">
-            <option value=""></option>
-            <option value="">Accra</option>
-            <option value="">Kumasi</option>
-            <option value="">Ho</option></select
-          ><br />
-          <br />
-          <label for="time">Departure TIme:</label>
-          <select name="time" id="time">
-            <option value=""></option>
-            <option value="">4:00 am</option>
-            <option value="">6:00 am</option>
-            <option value="">9:00 am</option>
-            <option value="">12:00 am</option>
-          </select>
-          <div class="proceed-button">
-            <button class="pbtn" type="button"><strong>Proceed</strong></button>
-          </div>
+      <div class="div-paragraph">
+        <label for="destination">Search Destination:</label>
+        <select name="destination" id="destination" required>
+          <option value="none">none</option>
+          <option value="accra">Accra</option>
+          <option value="kumasi">Kumasi</option>
+          <option value="ho">Ho</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="location">Your Location:</label>
+        <select name="location" id="location" required>
+          <option value="none">none</option>
+          <option value="accra">Accra</option>
+          <option value="kumasi">Kumasi</option>
+          <option value="ho">Ho</option>
+        </select>
+
+        <br />
+        <br />
+        
+        <label for="time">Departure Time:</label>
+        <select name="time" id="time" required>
+          <option value="none"></option>
+          <option value="">4:00 am</option>
+          <option value="">6:00 am</option>
+          <option value="">9:00 am</option>
+          <option value="">12:00 am</option>
+        </select>
+<label for=""id="btn" class="labelShowPrice">show price</label>
+<div id="display"></div>
+<!-- <button id="btn">Show Price</button> -->
+
+        <div class="submit">
+          <input type="submit" value="Proceed">
         </div>
+
+        <!-- <div class="proceed-button">
+          <button class="pbtn" type="button"><a href="/payment.html" class="anc" ><strong>Proceed</strong></a></button>
+        </div> -->
+
+      </div>
+    </form>
+      </div>
+        <div class="social">
+      <div style="margin-top: 450px">
+        <i class="fab fa-facebook m-2"></i>
+
+        <i class="fab fa-twitter m-2"></i>
+
+        <i class="fab fa-instagram m-2"></i>
+
+        <i class="fab fa-youtube m-2"></i>
       </div>
     </section>
+    <script src="./bookforself.js"></script>
   </body>
 </html>

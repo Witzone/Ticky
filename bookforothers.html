@@ -11,7 +11,7 @@
       <img src="/Images/ticky2-Recovered.png" class="nav-head" />
       <div class="nav-links">
         <ul id="links">
-          <li><a href="#">Home</a></li>
+          <li><a href="/home.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Account</a></li>
         </ul>
@@ -30,40 +30,51 @@
         <h3 class="P2">Book For Others</h3>
         <hr />
         <br />
-        <div class="Placeholders">
-          <input class="place1" type="placeholder" value="">Nane Of Person</input>
-          <input class="place2" type="placeholder" value=""></input>
-          <label for="Name of Person" type="placeholder">Name Of Person</label>
-        </div>
-        <div class="div-paragraph">
-          <label for="destination">Search Destination:</label>
-          <select name="destination" id="destination">
-            <option value=""></option>
-            <option value="">Accra</option>
-            <option value="">Kumasi</option>
-            <option value="">Ho</option></select
-          ><br />
-          <br />
+        
+        <p>by seth</p>
+    <form class="form" action="./payment.html" method="GET">
+      <div class="Placeholders">
+        <label for="">your name</label>
+        <input class="place1" type="placeholder" value="" required></input>
+        <br>
+        <label for="Name of Person" type="placeholder">booking for</label>
+        <input class="place2" type="placeholder" value="" required></input>
+      </div>
+      <div class="div-paragraph">
+        <label for="destination">Search Destination:</label>
+        <select name="destination" id="destination required" required>
+          <option value="" selected="true" disabled="disabled"></option>
+          <option value="accra">Accra</option>
+          <option value="kumasi">Kumasi</option>
+          <option value="ho">Ho</option></select>
+        <br />
+        <br />
 
-          <label for="location">Your Location:</label>
-          <select name="location" id="location">
-            <option value=""></option>
-            <option value="">Accra</option>
-            <option value="">Kumasi</option>
-            <option value="">Ho</option></select
-          ><br />
-          <br />
-          <label for="time">Departure TIme:</label>
-          <select name="time" id="time">
-            <option value=""></option>
-            <option value="">4:00 am</option>
-            <option value="">6:00 am</option>
-            <option value="">9:00 am</option>
-            <option value="">12:00 am</option>
+        <label for="location">Your Location:</label>
+        <select name="location" id="location" required>
+          <option value=""></option>
+          <option value="">Accra</option>
+          <option value="">Kumasi</option>
+          <option value="">Ho</option>
           </select>
-          <div class="proceed-button">
-            <button class="pbtn" type="button"><strong>Proceed</strong></button>
-          </div>
+        <br />
+        <br />
+        <label for="time">Departure TIme:</label>
+        <select name="time" id="time" required>
+          <option value=""></option>
+          <option value="">4:00 am</option>
+          <option value="">6:00 am</option>
+          <option value="">9:00 am</option>
+          <option value="">12:00 am</option>
+        </select>
+        <div class="submit">
+          <input type="submit" value="Proceed">
+        </div>
+        <!-- <div class="proceed-button">
+          <button class="pbtn" type="button"><a href="/payment.html" class="anc" ><strong>Proceed</strong></a></button>
+        </div> -->
+      </div>
+    </form>
         </div>
       </div>
     </section>
