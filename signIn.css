@@ -9,15 +9,12 @@ body {
   background-color: #dbd5d0;
   background-image: url(./Images/Landing\ Page.png);
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-attachment: fixed;
   background-size: 100%;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-=======
   background-size: cover;
->>>>>>> c2bbbf1abd0bfa5521a22771b8db7b48bb7aa20e
   overflow: hidden;
 }
 

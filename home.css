@@ -1,15 +1,12 @@
 body {
-  background-image: url(/Images/booking.png);
+  background-image: url(/Images/bookkeyboard.png);
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-attachment: fixed;
   background-size: 100%;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-=======
   background-size: cover;
->>>>>>> c2bbbf1abd0bfa5521a22771b8db7b48bb7aa20e
 }
 
 .nav-head {
@@ -34,6 +31,7 @@ body {
   margin-top: 2rem;
 }
 
+.navlinks,
 li:hover {
   background-color: rgb(134, 65, 7);
   background-position: center;
@@ -67,10 +65,12 @@ a {
 }
 
 .dropbtn {
-  background-color: rgb(134, 65, 7);
-  color: white;
+  background-color: rgba(153, 74, 0, 0.952);
+  color: black;
   padding: 16px;
-  font-size: 16px;
+  font-family: url(/fonts/Montserrat-Bold.ttf);
+  font-style: inherit;
+  font-size: 30px;
   border: none;
   cursor: pointer;
   border-radius: 20px;
@@ -130,7 +130,7 @@ a {
   width: 10rem;
   height: 3rem;
   margin-top: 1rem;
-  background-color: rgb(134, 65, 7);
+  background-color: rgb(71, 69, 67);
   border: none;
   color: white;
   outline: none;
@@ -141,7 +141,7 @@ a {
   width: 10rem;
   height: 3rem;
   margin-top: 1rem;
-  background-color: rgb(134, 65, 7);
+  background-color: rgb(71, 69, 67);
   border: none;
   color: white;
   outline: none;
