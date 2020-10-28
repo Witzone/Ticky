@@ -1,9 +1,7 @@
 body {
   background-image: url(/Images/phoneNlaptop.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 88% 100%;
-  background-position-x: center;
+  background-size: cover;
   overflow: hidden;
 }
 .nav-head {
@@ -142,7 +140,7 @@ a {
   margin: 5%;
 }
 
-.labelShowPrice{
+.labelShowPrice {
   border-style: solid;
 }
 /* .anc {
