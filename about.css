@@ -2,8 +2,10 @@ body {
   background-image: url(/Images/Landing\ Page.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 88% 100%;
-  background-position-x: center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
 }
 .nav-bar {
   display: flex;
@@ -62,10 +64,10 @@ a {
   cursor: pointer;
 }
 
-.dropbtn:hover,
+/* .dropbtn:hover,
 .dropbtn:focus {
   background-color: ;
-}
+} */
 
 .dropdown {
   position: relative;

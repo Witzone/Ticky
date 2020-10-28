@@ -2,7 +2,7 @@ body {
   background-image: url(/Images/pay.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: center;
+  background-size: 100%;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
