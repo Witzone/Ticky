@@ -54,3 +54,61 @@ a {
   padding-left: 2rem;
   color: white;
 }
+
+.column {
+  display: flex;
+}
+
+.par {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 25rem;
+  margin-left: 5rem;
+}
+
+.payment {
+  background-color: rgba(16, 38, 51, 0.781);
+  color: white;
+  width: 25rem;
+  height: 20rem;
+  border-radius: 10px;
+  margin-left: 20rem;
+  margin-top: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+}
+
+.head-section{
+margin-left: 5rem;
+margin-top: 2rem;
+}
+
+.momo {
+  margin-left: 2rem;
+}
+.num {
+  margin-left: 5px;
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.CP {
+  margin-top: 5rem;
+}
+.CP input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 2rem;
+  margin-left: 8.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+.CP input:hover{
+  cursor: pointer;
+  background-color: rgba(63, 155, 63, 0.781);
+}
