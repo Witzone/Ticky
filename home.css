@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Images/bookkeyboard.png);
+  background-image: url(./Images/bookkeyboard.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -68,7 +68,7 @@ a {
   background-color: rgba(153, 74, 0, 0.952);
   color: black;
   padding: 16px;
-  font-family: url(/fonts/Montserrat-Bold.ttf);
+  font-family: url(./fonts/Montserrat-Bold.ttf);
   font-style: inherit;
   font-size: 30px;
   border: none;
