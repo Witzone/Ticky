@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticky</title>
-    <link rel="stylesheet" href="/bookforothers.css" />
+    <link rel="stylesheet" href="./bookforothers.css" />
   </head>
   <body>
     <div class="nav-bar">
       <img src="/Images/ticky2-Recovered.png" class="nav-head" />
       <div class="nav-links">
         <ul id="links">
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
           <li><a href="#">Account</a></li>
         </ul>
       </div>
@@ -32,57 +32,60 @@
         <hr />
         <br />
         
-        <p>by seth</p>
+  
 
         <form class="form" action="./payment.html" method="GET">
+
           <div class="Placeholders">
-            <label for="">your name</label>
+            <label for="Name Of Person">Name Of Person:</label>
             <input class="place1" type="placeholder" value="" required></input>
             <br>
-            <label for="Name of Person" type="placeholder">booking for</label>
+            <label for="Phone Number" type="placeholder">Phone Number:</label>
             <input class="place2" type="placeholder" value="" required></input>
           </div>
           
           <div class="div-paragraph">
             <label for="destination">Search Destination:</label>
-            <select name="destination" id="destination required" required>
-
-              <option value="" selected="true" disabled="disabled"></option>
+            <select name="destination" id="destination" required>
+              <option value=""></option>
               <option value="accra">Accra</option>
               <option value="kumasi">Kumasi</option>
-              <option value="ho">Ho</option></select>
+              <option value="ho">Ho</option>
+            </select>
             <br />
             <br />
 
             <label for="location">Your Location:</label>
             <select name="location" id="location" required>
               <option value=""></option>
-              <option value="">Accra</option>
-              <option value="">Kumasi</option>
-              <option value="">Ho</option>
+              <option value="accra">Accra</option>
+              <option value="kumasi">Kumasi</option>
+              <option value="ho">Ho</option>
             </select>
             <br />
             <br />
 
             <label for="time">Departure TIme:</label>
             <select name="time" id="time" required>
-              <option value=""></option>
+              <option value="none"></option>
               <option value="">4:00 am</option>
               <option value="">6:00 am</option>
               <option value="">9:00 am</option>
               <option value="">12:00 am</option>
             </select>
-          
+           <div class="price">
+            <label for="" id="btn" class="labelShowPrice">Show Price</label>
+            </div>
+
             <div class="submit">
               <input type="submit" value="Proceed">
             </div>
-            <!-- <div class="proceed-button">
-              <button class="pbtn" type="button"><a href="/payment.html" class="anc" ><strong>Proceed</strong></a></button>
-              </div> -->
+            
          </div>
         </form>
       </div>
     
     </section>
+    <script src="/bookforothers.js"></script>
   </body>
 </html>

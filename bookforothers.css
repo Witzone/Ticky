@@ -67,18 +67,41 @@ a {
 }
 
 .book-section {
-  background-color: rgb(134, 65, 7);
+  background-color: rgba(15, 64, 83, 0.774);
   color: white;
-  margin-left: 30rem;
+  margin-left: 25rem;
   margin-top: 1rem;
-  width: 20rem;
-  height: 28rem;
+  width: 25rem;
+  height: 35rem;
   border-radius: 15px;
+}
+.Placeholders{
+  margin-left: 1rem;
+ 
+}
+.place1 {
+  width: 15rem;
+  height: 2rem;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  
+}
+
+.place2 {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 2rem;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
 }
 
 .P2 {
   padding: 10px;
-  padding-left: 90px;
+  padding-left: 120px;
+  font-size: 1.5rem;
 }
 
 .div-paragraph {
@@ -128,4 +151,35 @@ a {
 .pbtn:hover {
   background-color: greenyellow;
   cursor: pointer;
+}
+
+.labelShowPrice {
+  border-style: solid;
+}
+
+.price {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  /* width: 3rem; */
+  /* height: 2rem; */
+}
+
+.price label {
+  width: 2rem;
+  height: 3rem;
+}
+
+.submit input {
+  margin-top: 4rem;
+  margin-left: 7.5rem;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.submit input:hover {
+  cursor: pointer;
+  background-color: rgba(23, 235, 217, 0.658);
+  color: white;
 }
