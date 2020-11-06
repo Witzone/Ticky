@@ -3,19 +3,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -o-background-size: cover;
-  -moz-background-size: cover;
+  -moz-background-size: cover; */
 }
 .nav-bar {
   display: flex;
   margin-left: 6rem;
   color: white;
-  /* font-family: ; */
   font-size: 2rem;
 }
 
-.nav-head {
+.logo {
   width: 8rem;
   height: 3rem;
   margin-top: 2rem;
@@ -27,6 +26,10 @@ body {
   font-size: 1.5rem;
   color: white;
   margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  padding-right: 2rem;
 }
 
 li:hover {
@@ -34,22 +37,20 @@ li:hover {
   background-position: center;
 }
 
-#links {
+/* #links {
   list-style-type: none;
   display: flex;
-
-  /* right: 0%; */
   text-decoration: none;
   padding-right: 2rem;
   color: white;
-}
+} */
 
-li {
+/* li {
   float: right;
-}
+} */
 
 a {
-  right: 0%;
+  /* right: 0%; */
   text-decoration: none;
   padding-left: 2rem;
   color: white;
@@ -182,4 +183,152 @@ input[type="submit"] {
 
 i {
   color: #914604;
+}
+
+.fa-home {
+  position: absolute;
+  margin-left: -30px;
+}
+
+.fa-phone-square {
+  position: absolute;
+  margin-left: -30px;
+}
+
+.fa-envelope {
+  position: absolute;
+  margin-left: -30px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background-size: 100% 100%;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: rgb(80, 94, 141);
+    width: 30%;
+    margin-top: 0;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .burger {
+    display: block;
+    margin-left: 170px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 0;
+    margin-left: -80px;
+    width: 60px;
+  }
+
+  .nav-logo {
+    /* position: absolute; */
+    width: 50%;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    margin-left: -1px;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .address {
+    width: 100%;
+    /* font-size: 20px; */
+    margin-left: -1px;
+    padding-left: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .contactinfo {
+    /* position: absolute; */
+    /* display: block; */
+  }
+
+  .infotext {
+    margin-left: -20px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+  }
+
+  .contact {
+    /* margin-top: 40px; */
+    display: none;
+  }
+
+  .social {
+    width: 100%;
+    padding-top: 30px;
+    margin-left: -35px;
+  }
+
+  .footer {
+    width: 100%;
+    margin-left: -60px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* this is the last code to add. After all is said and done */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
 }

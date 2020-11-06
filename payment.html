@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="./payment.css" />
   </head>
   <body>
-    <div class="nav-bar">
-      <img src="./Images/ticky2-Recovered.png" class="nav-head" />
-      <div class="nav-links">
-        <ul id="links">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#">Account</a></li>
-        </ul>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <img src="./Images/ticky2-Recovered.png" class="logo" />
       </div>
-    </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+
+        <!-- <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Account</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+          </div>
+        </div> -->
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <div class="column">
       <div class="par">
         <p>
@@ -48,5 +66,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./about.js"></script>
   </body>
 </html>
