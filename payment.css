@@ -16,36 +16,58 @@ body {
   font-size: 2rem;
 }
 
-.nav-head {
+.logo {
   width: 8rem;
   height: 3rem;
   margin-top: 2rem;
   margin-left: 2rem;
 }
+
 .nav-links {
-  margin-left: 50rem;
+  margin-left: 45rem;
   font-size: 1.5rem;
   color: white;
   margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  padding-right: 2rem;
 }
 
-.nav-links li:hover {
-  background-color: rgb(134, 65, 7);
+li a {
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 1rem;
 }
+
+.nav-links li a:hover,
+.dropbtn:hover {
+  background-color: rgba(32, 58, 80, 0.623);
+
+  /* position: absolute;*/
+}
+
+.nav-links a {
+  right: 0%;
+  text-decoration: none;
+  /* padding-left: 2rem; */
+  color: white;
+  /* margin-left: 2rem; */
+  align-items: center;
+}
+
 .dropbtn {
   background-color: transparent;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  font-size: 1.5rem;
   border: none;
+  outline: none;
   cursor: pointer;
-  margin-top: 0%;
+  font-family: "Times New Roman", Times, serif;
+  padding: 1rem;
+  margin: 1rem;
 }
-
-/* .dropbtn:hover,
-.dropbtn:focus {
-  background-color: ;
-} */
 
 .dropdown {
   position: relative;
@@ -55,15 +77,17 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: rgba(38, 57, 58, 0.596);
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -75,29 +99,6 @@ body {
 
 .show {
   display: block;
-}
-
-#links {
-  list-style-type: none;
-  display: flex;
-
-  /* right: 0%; */
-  text-decoration: none;
-  /* padding-right: 2rem; */
-  color: white;
-}
-
-li {
-  float: right;
-}
-
-.nav-links a {
-  right: 0%;
-  text-decoration: none;
-  /* padding-left: 2rem; */
-  color: white;
-  margin-left: 1rem;
-  align-items: center;
 }
 
 .column {
@@ -131,6 +132,7 @@ li {
 .momo {
   margin-left: 2rem;
 }
+
 .num {
   margin-left: 5px;
   width: 10rem;
@@ -144,6 +146,7 @@ li {
 .CP {
   margin-top: 5rem;
 }
+
 .CP input {
   border-radius: 5px;
   border: none;
@@ -153,7 +156,123 @@ li {
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
 }
+
 .CP input:hover {
   cursor: pointer;
   background-color: rgba(63, 155, 63, 0.781);
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background-size: 100% 100%;
+    background-size: cover;
+    /* overflow-x: hidden; */
+  }
+
+  /* .logo {
+    margin: 10px;
+    padding: 0;
+    margin-right: 20%;
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+  } */
+
+  .nav-links {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: rgb(80, 94, 141);
+    width: 10%;
+    margin-top: 0;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .burger {
+    display: block;
+    margin-left: 170px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 0;
+    margin-left: -80px;
+    width: 60px;
+  }
+
+  .nav-logo {
+    width: 50%;
+  }
+
+  .par {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 30px;
+
+    /* color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25rem;
+    margin-left: 5rem; */
+  }
+
+  .payment {
+    width: 70%;
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* this is the last code to add. After all is said and done */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
 }

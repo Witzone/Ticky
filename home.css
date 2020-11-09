@@ -9,12 +9,12 @@ body {
   background-size: cover;
 }
 
-.nav-head {
+/* .nav-head {
   width: 8rem;
   height: 3rem;
   margin-top: 2rem;
   margin-left: 2rem;
-}
+} */
 
 .nav-bar {
   display: flex;
@@ -24,11 +24,22 @@ body {
   font-size: 2rem;
 }
 
+.logo {
+  width: 8rem;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
 .nav-links {
   margin-left: 50rem;
   font-size: 1.5rem;
   color: white;
   margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  padding-right: 2rem;
 }
 
 .navlinks,
@@ -37,15 +48,13 @@ li:hover {
   background-position: center;
 }
 
-#links {
+/* #links {
   list-style-type: none;
   display: flex;
-
-  /* right: 0%; */
   text-decoration: none;
   padding-right: 2rem;
   color: white;
-}
+} */
 
 li {
   float: right;
@@ -158,7 +167,7 @@ a {
   cursor: pointer;
 }
 
-.social {
+/* .social {
   position: relative;
   display: inline-block;
   margin-left: 95%;
@@ -170,4 +179,109 @@ a {
 
 .social > i {
   margin: 5%;
+} */
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background-size: 100% 100%;
+    background-size: cover;
+    /* overflow-x: hidden; */
+  }
+
+  .nav-links {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: rgb(80, 94, 141);
+    width: 30%;
+    margin-top: 0;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .burger {
+    display: block;
+    margin-left: 170px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 0;
+    margin-left: -80px;
+    width: 60px;
+  }
+
+  .nav-logo {
+    /* position: absolute; */
+    width: 50%;
+  }
+
+  .paragraph {
+    margin-top: 70px;
+  }
+
+  .dropbtn {
+    margin: 0;
+    margin-left: 130px;
+    margin-top: 70px;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .but1,
+  .but2 {
+    margin-left: 170px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* this is the last code to add. After all is said and done */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
 }
