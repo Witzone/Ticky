@@ -29,9 +29,52 @@ body {
   margin-top: 2rem;
 }
 
-li:hover {
+.nav-links li:hover {
   background-color: rgb(134, 65, 7);
-  background-position: center;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0%;
+}
+
+/* .dropbtn:hover,
+.dropbtn:focus {
+  background-color: ;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 #links {
@@ -48,11 +91,13 @@ li {
   float: right;
 }
 
-a {
+.nav-links a {
   right: 0%;
   text-decoration: none;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   color: white;
+  margin-left: 1rem;
+  align-items: center;
 }
 
 .column {
@@ -78,9 +123,9 @@ a {
   border: none;
 }
 
-.head-section{
-margin-left: 5rem;
-margin-top: 2rem;
+.head-section {
+  margin-left: 5rem;
+  margin-top: 2rem;
 }
 
 .momo {
@@ -105,10 +150,10 @@ margin-top: 2rem;
   outline: none;
   height: 2rem;
   margin-left: 8.5rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
 }
-.CP input:hover{
+.CP input:hover {
   cursor: pointer;
   background-color: rgba(63, 155, 63, 0.781);
 }
